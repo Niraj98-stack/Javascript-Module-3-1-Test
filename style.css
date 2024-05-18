@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+}
+
+#counter-value {
+    margin: 0 20px;
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+#clear-btn {
+    display: none;
+}
